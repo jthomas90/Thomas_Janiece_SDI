@@ -149,7 +149,7 @@ var nope = false;
 // PEMDAS - Please Excuse My Dear Aunt Sally
 // Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction
 
-// Find the Avereage quiz grades
+// Find the Average quiz grades
 
 var quiz1 = 87;
 var quiz2 = 100;
@@ -159,7 +159,31 @@ var quiz3 = 90;
 var average = (quiz1 + quiz2 + quiz3)/3;
 console.log(average);
 
+//Concatenation - Combining text stings
+// Use the + sign - add and concatenating
 
+var firstName = "Kermint";
+var lastName = "The Frog";
+var fullName = firstName +" "+ lastName;
+console.log(fullName);
+
+var d = 6;
+var e = "7";
+//If you want the text sting to be a number you have to cast it
+//Number(the text string)
+
+var combined  = d+Number(e);
+console.log(combined);
+
+var pi = 3.14;
+
+// To round a number we use the .tofixed(#)
+var num = 5.5678912345;
+
+//Round to 2 decimal places
+var n = num.toFixed(2);
+
+console.log(n);
 
 
 
