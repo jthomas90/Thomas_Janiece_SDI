@@ -26,8 +26,5 @@ console.log("The number of slices each partier will get is " + TPA +" slices.");
 //Slices of Pie Part 2
 //Calculate how many pizzas sparky gets
 
-
-var sparky = TPA%2;
-
-console.log(sparky);
-
+var remainder = (pizza*slices)%people;
+console.log( "Sparky gets to eat " + remainder+ " slices of pizza.");
