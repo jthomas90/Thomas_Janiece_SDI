@@ -21,7 +21,7 @@ var TPA = (pizza*slices)/people;
 
 //Outcome
 
-console.log("The number of slices each partier will get is " + TPA +" slices.");
+console.log("Each person ate " + TPA +" slices of pizza at the party.");
 
 
 //Slices of Pie Part 2
@@ -30,7 +30,8 @@ console.log("The number of slices each partier will get is " + TPA +" slices.");
 var remainder = (pizza*slices)%people;
 //Outcome
 
-console.log( "Sparky gets to eat " + remainder+ " slices of pizza.");
+console.log( "Sparky got " + remainder+ " slices of pizza.");
+
 
 //Average Shopping Bill
 //Variables
@@ -47,7 +48,7 @@ var totalBill = bill1+bill2+bill3+bill4+bill5;
 
 //Outcome for Total Amount Spent on Groceries
 
-console.log("$" + totalBill + " is the total amount spent on 5 weeks of groceries.");
+console.log("You have spent a total of $" + totalBill + " on 5 weeks of groceries.");
 
 //Average weekly for Groceries
 
@@ -55,5 +56,42 @@ var average = totalBill/numOfBills;
 
 //Outcome for the weekly average of bills
 
-console.log("$" + average + 0 +" is the weekly average spent on groceries in 5 weeks.");
+console.log("That is an average	of $" + average + 0 +" week.");
 
+
+//Discount
+//Variables
+var oGP = 200;
+var dist = 20;
+var distDecimal = dist/100;
+var item = "gold watch";
+var tax = .7;
+var taxDecimal = tax/100;
+
+//Tax price
+
+var tPrice = (oGP*taxDecimal);
+
+//Discount price
+
+var dPrice = (distDecimal*oGP);
+
+//Price with taxes
+
+var pWithDandT = ((oGP - dPrice)+tPrice).toFixed(2);
+
+/*/Outcome
+
+console.log(pWithDandT); */
+
+//Price of item without tax
+
+
+var pWithD = oGP - dPrice;
+
+/*/Outcome
+
+console.log(pWithD);  */
+
+//Final Outcome
+console.log("Your " + item + " was originally $" + oGP + " but after a "+ dist+ "% discount, it is now $" + pWithD + " without tax, and $"+ pWithDandT +" with tax.");
