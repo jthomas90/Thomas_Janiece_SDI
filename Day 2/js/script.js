@@ -139,7 +139,7 @@ var phrase2 = "I don't know. \nYou never do!";
 console.log(phrase2);
 
 // Boolean - kind of like a light switch
-// Either true of false
+// Either true of false; 1 or 0
 // Not a text string and must be lower case!!
 var yes = true;
 
