@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e71f514-71b4-416f-a948-05d563e622f7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Day2LabExpressions/Instructional-Expressions_bfa253db-136a-4899-a4b8-a063e22281ff.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day 2/js/script.js" afterPath="$PROJECT_DIR$/Day 2/js/script.js" />
-    </list>
+    <list default="true" id="7e71f514-71b4-416f-a948-05d563e622f7" name="Default" comment="" />
     <ignored path="Thomas_Janiece_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
