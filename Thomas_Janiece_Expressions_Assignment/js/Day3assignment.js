@@ -12,8 +12,15 @@ Day 3 Assignment
 
 
 //Create Variables
-var hoursWorked = prompt("How many hours a day do you work a day?\n1-24 Hours."),
-    hourlyPay = prompt("How much do you get paid hourly?"),
-    daysWorked = prompt("How many days a week do you work?");
+ var    myArray = [];
+ myArray[0] = prompt("How many hours a day do you work a day?\n1-24 Hours.");
+ myArray[1] = prompt("How much do you get paid hourly?");
+ myArray[2] = prompt("How many days a week do you work?");
 
- 
+
+console.log(myArray);
+
+
+
+
+
