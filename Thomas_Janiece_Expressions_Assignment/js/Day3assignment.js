@@ -32,10 +32,12 @@ var fullTotal = total;
  var withTax = fullTotal - myArray[3];
 
  //Solution to the amount before taxes
- console.log("You'll get paid $"+fullTotal +" before taxes.");
+ console.log("You'll get paid $"+fullTotal.toFixed(2) +" before taxes.");
 
 //Solution to the amount with taxes applied
- console.log("You'll get paid $"+withTax + " when taxes are applied");
+ console.log("You'll get paid $"+withTax.toFixed(2) + " when taxes are applied.");
+
+
 
 
 
