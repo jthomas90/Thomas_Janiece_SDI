@@ -7,29 +7,35 @@ Day 3 Assignment
  */
 
 
-alert("This is program is to help you find out how much you get paid before taxes are taken out First.\nThen about how much you'll actually get with your approximate tax input.");
+alert("This is program is to help you find out how much you get paid before taxes are taken out first and about how much you'll actually get with your approximate tax input.");
 
 
 
 //Create Variables
  var    myArray = [];
- myArray[0] = prompt("How many hours a day do you work a day?\n1-24 Hours.");
- myArray[1] = prompt("How much do you get paid hourly?");
- myArray[2] = prompt("How many days a week do you work?");
- myArray[3] = prompt("How much tax is typically taken out per week?");
+ myArray[0] = prompt("How many hours a day do you work a day?\ni.e. Numbers Only.");
+ myArray[1] = prompt("How much do you get paid hourly?\ni.e. Numbers Only.");
+ myArray[2] = prompt("How many days a week do you work?\ni.e. Numbers Only.");
+ myArray[3] = prompt("Approximately how much tax is taken out per week?\ni.e. Numbers Only.");
 
+ //Display user inputs
 console.log(myArray);
 
- //Sub Variables
- hoursWorked = myArray[0];
- workPay = myArray[1];
- daysWorked = myArray[2];
-
-//Calculate hours*pay*days
+//Calculate hours by pay
 var total = myArray[0] * myArray[1];
-var fullTotal = total *=myArray[2];
+
+//Multiply ^(line 25) by The days worked
+var fullTotal = total;
+ fullTotal*=myArray[2];
+
+//Subtract the full total (line 29) by the app. tax the user inputs.
  var withTax = fullTotal - myArray[3];
 
+ //Solution to the amount before taxes
+ console.log("You'll get paid $"+fullTotal +" before taxes.");
+
+//Solution to the amount with taxes applied
+ console.log("You'll get paid $"+withTax + " when taxes are applied");
 
 
 
