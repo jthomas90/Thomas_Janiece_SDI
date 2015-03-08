@@ -37,10 +37,12 @@ var fullTotal = total;
 //Solution to the amount with taxes applied
  console.log("You'll get paid $"+withTax.toFixed(2) + " when taxes are applied.");
 
+ //Testing
+ /*
+  First Test
+  I typed in 8 for my hours worked, 7.50 for tmy pay rate, 5 for how many days I worked and 80 for the approximate tax taken out. My calculator gave me $300 before taxes and $220 when the taxes are taken out.
 
-
-
-
-
-
-
+  Second Test
+  I typed in 12 for my hours worked, 9.78 for tmy pay rate, 3 for how many days I worked and 129 for the approximate tax taken out. My calculator gave me $352.08 before taxes and $223.08 when the taxes are taken out.
+  */
+ 
