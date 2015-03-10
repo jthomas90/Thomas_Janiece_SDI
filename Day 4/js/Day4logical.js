@@ -55,4 +55,3 @@ f && f = f
      console.log("Pick a cheaper car or find a better job.")
  }
 
- 
