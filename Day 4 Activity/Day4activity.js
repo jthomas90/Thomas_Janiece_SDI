@@ -30,12 +30,21 @@ var  q2 = prompt("Is that in Celsius or Fahrenheit?\nC or F Caps Only");
  //Check the Login
 
  //Create variables
- var username = prompt("Please enter your password");
+ var username = prompt("Please enter your Username");
  var pass = prompt("Please enter your password");
- var cUsername = Necybayb;
+ var cUsername = "Necybayb";
  var cPass = "1Dalieono";
 
-
+//Conditionals
+if (username === cUsername && cPass ){
+    //Username and pass correct
+    console.log("Welcome, " + cUsername+"!");
+} else if(pass === cPass ){
+    //Just username correct
+    console.log("Password does not match our records")
+} else {
+    console.log("User not found.Try again.")
+}
 
 
 
