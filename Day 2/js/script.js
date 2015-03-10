@@ -177,7 +177,7 @@ console.log(combined);
 
 var pi = 3.14;
 
-// To round a number we use the .tofixed(#)
+// To round a number we use the .toFixed(#)
 var num = 5.5678912345;
 
 //Round to 2 decimal places

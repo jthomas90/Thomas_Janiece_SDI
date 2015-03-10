@@ -34,7 +34,7 @@ console.log("("+ areaCode+ ")"+ preFix + "-" + lineNumber);
  //Parsing Intergers
  //parseInt() - looks through a text and returns an interger
  //only the first number in the string is returned
- //of hte first character in the text string canNot be converted into the number, then it returns NAN = Not a number
+ //of the first character in the text string canNot be converted into the number, then it returns NAN = Not a number
 
 
  var a = parseInt("48 years old");
