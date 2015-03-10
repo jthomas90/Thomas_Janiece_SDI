@@ -29,7 +29,7 @@ Day 4 conditionals
  }
 
 
-//Relational Operators
+//Relational Operators <, >, =<, =>, ==, ===
 
  //If the kid is over 48 inches tall then he can ride the coaster
  var kidHeight = 57;
@@ -48,3 +48,5 @@ Day 4 conditionals
  } else {
      console.log("Sorry you are to short.")
  }
+
+
