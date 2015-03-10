@@ -13,6 +13,18 @@ Day 4 Activity
 
  //Variable for prompt to decide which way to covert
 
- var q1 = prompt("What is the temperature?");
-var  q2 = prompt("Is that in Celsius or Fahrenheit?\nC or F ");
- 
+ var q1 = prompt("What is the temperature?\nNumbers only.");
+var  q2 = prompt("Is that in Celsius or Fahrenheit?\nC or F Caps Only");
+ var celsius = ((q1-32)*5)/9;
+ var fahrenheit = (q1*9)/5+32;
+ var cel = "C";
+
+ //Conditional if C or F
+ if (q2 === cel){
+     console.log(fahrenheit.toFixed(2) + " Fahrenheit.");
+ } else {
+     console.log(celsius.toFixed(2) + " Celsius.")
+ }
+
+
+
