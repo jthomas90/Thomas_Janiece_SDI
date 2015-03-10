@@ -27,4 +27,15 @@ var  q2 = prompt("Is that in Celsius or Fahrenheit?\nC or F Caps Only");
  }
 
 
+ //Check the Login
+
+ //Create variables
+ var username = prompt("Please enter your password");
+ var pass = prompt("Please enter your password");
+ var cUsername = Necybayb;
+ var cPass = "1Dalieono";
+
+
+
+
 
