@@ -36,15 +36,26 @@ var  q2 = prompt("Is that in Celsius or Fahrenheit?\nC or F Caps Only");
  var cPass = "1Dalieono";
 
 //Conditionals
-if (username === cUsername && cPass ){
+if (username === cUsername && (pass === cPass) ){
     //Username and pass correct
     console.log("Welcome, " + cUsername+"!");
-} else if(pass === cPass ){
+} else if(pass != (cPass) ){
     //Just username correct
     console.log("Password does not match our records")
 } else {
     console.log("User not found.Try again.")
 }
 
+
+ //Movie Ticket Price
+
+ //Create variables
+var age = prompt("How old are you?");
+ var movieTime = prompt("What time doe the movie start?\n1-12");
+
+
+// if(age =< 10 || age <55 ){
+ //    console.log("Your ticket is $7.00");
+ //}
 
 
