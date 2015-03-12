@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e71f514-71b4-416f-a948-05d563e622f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day 5/js/Day5steaks.js" afterPath="$PROJECT_DIR$/Day 5/js/Day5steaks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day 5/js/Day5nestingIfs.js" afterPath="$PROJECT_DIR$/Day 5/js/Day5nestingIfs.js" />
     </list>
     <ignored path="Thomas_Janiece_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Day5steaks.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day 5/js/Day5steaks.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="870">
-              <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Day5nestingIfs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day 5/js/Day5nestingIfs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="717">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.7280335" vertical-offset="18" max-vertical-offset="900">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -571,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day 5/js/Day5nestingIfs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="717">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.7280335" vertical-offset="18" max-vertical-offset="900">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>
       </provider>
