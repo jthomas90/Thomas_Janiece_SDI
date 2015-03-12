@@ -22,7 +22,6 @@ Day 5 Steaks
 
  //Create variable for our steak temperature
 var steakTemp = prompt("What is the temperature of your steak?");
- var steakDonness
 
 // We have to test the cases above to see where our temp fall
 
