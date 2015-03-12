@@ -54,7 +54,7 @@ var age = prompt("How old are you?");
  var movieTime = prompt("What time doe the movie start?\n1-12");
 
 //If the person is younger then 10 or older the 55 their ticket is $7
- if(age <= 1 || age <= 55 ){
+ if(age <= 10 || age <= 55 ){
      console.log("Your ticket is $7.00");
      //If the person is watching the movie before 3 but after 5 they also get a discount.
  } else if(movieTime <= 3 && movieTime >= 5){
