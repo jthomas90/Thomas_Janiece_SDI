@@ -47,7 +47,7 @@ Day 7 Zombies
 //How long will it take to get million zombies
 
 var numDays = 1;
- 
+
  while(numZombies <=1000000){
      //How many NEW get made everyday
      var newZombies = numZombies * numBites;
