@@ -47,7 +47,7 @@ Section 00
  //call the dog function
  dogYears(4);
 
- //prompt user for humanage
+ //prompt user for humanAge
  var userInput = prompt("Please enter your human age.");
 
  //call the dog function
