@@ -37,7 +37,7 @@ Section 00
      //Variables created inside of a function can not be accessed outside of the function.
      //variables created outside of the function can be but usually will not be.
 
-     
+
  }
 
  console.log("Before the function call, width = "+width);
