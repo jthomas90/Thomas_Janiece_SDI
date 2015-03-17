@@ -8,3 +8,7 @@ Section 00
 
 
 //alert("Just testing!");
+
+ //Calculate the circumference of a Circle
+ //Create a function
+//FORMULA FOR RADIUS - #/3.14
