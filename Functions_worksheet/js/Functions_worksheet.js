@@ -28,8 +28,7 @@ function circleCir(r){
  circleCir(10);
  //Create a variable for the return value
  var results = circleCir(radius);
-
-
+ 
 //Results
  console.log("The circumference of the circle is "+results.toFixed(2)+".");
 
@@ -43,17 +42,16 @@ function circleCir(r){
      //Re prompt user
      weight = prompt("Please do not leave blank and only use numbers.\nWhat is you weight?")
  }
+ //Make a variable for bee stings
  var beeStings = 8.666666667;
 
  function stung(w,b) {
      var howMany = w * b;
-
      //Prompt the user for their weight
-
      return howMany;
  }
  //Create variable to catch
  var answer = stung(weight, beeStings);
-
+//Results
  console.log("It takes " + Math.round(answer) + " bee stings to kill this animal.");
 
