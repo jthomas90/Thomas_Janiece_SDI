@@ -43,5 +43,5 @@ Section 00
  console.log("The are of the circle is "+circArea+".");
 
  //Whats is twice the circle area of a 6' circle
- var resultsTwice= circArea*2;
+ var resultsTwice = circArea*2;
  console.log("Twice the are is "+resultsTwice+".");

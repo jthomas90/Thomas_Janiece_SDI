@@ -7,6 +7,10 @@ Section 00
  */
 
 var radius = 1;
+//Math.round(what);
+ //Math.ceil(huh);
+ //Math.floor(ohgodwhy);
+
 //alert("Just testing!");
 
  //Calculate the circumference of a Circle
@@ -33,19 +37,23 @@ function circleCir(r){
 
 //STUNG
  //Calculate a function
-
- function stung(w,b){
-     var b = 8.666666667;
-      var howMany = w*b;
-     //Console.log
-     console.log("It takes "+ howMany + " bee stings to kill this animal")
- }
- //Prompt the user for their weight
- var weight = prompt("How many pounds do yo weigh?\nNumbers only please");
- if(weight === "" || isNaN(weight) ){
+ var weight = prompt("How many pounds do you weigh?\nNumbers only please");
+ if (weight === "" || isNaN(weight)) {
      //This code will run if the variable is blank or not a number
      //Re prompt user
      weight = prompt("Please do not leave blank and only use numbers.\nWhat is you weight?")
  }
+ var beeStings = 8.666666667;
 
- 
+ function stung(w,b) {
+     var howMany = w * b;
+
+     //Prompt the user for their weight
+
+     return howMany;
+ }
+ //Create variable to catch
+ var answer = stung(weight, beeStings);
+
+ console.log("It takes " + Math.round(answer) + " bee stings to kill this animal.");
+
