@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e71f514-71b4-416f-a948-05d563e622f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day 7/js/Day7Functions.js" afterPath="$PROJECT_DIR$/Day 7/js/Day7Functions.js" />
-    </list>
+    <list default="true" id="7e71f514-71b4-416f-a948-05d563e622f7" name="Default" comment="" />
     <ignored path="Thomas_Janiece_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,18 +26,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Day7Functions.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day 7/js/Day7Functions.js">
+      <file leaf-file-name="Day7Scope.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day 7/js/Day7Scope.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79079497" vertical-offset="168" max-vertical-offset="885">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="717">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Day7Functions.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day 7/Day7Functions.html">
+      <file leaf-file-name="Day7Scope.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day 7/Day7Scope.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
               <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
@@ -92,6 +90,8 @@
         <option value="$PROJECT_DIR$/Day 7/js/Day7LoopArrays.js" />
         <option value="$PROJECT_DIR$/Day 7/Day7Functions.html" />
         <option value="$PROJECT_DIR$/Day 7/js/Day7Functions.js" />
+        <option value="$PROJECT_DIR$/Day 7/Day7Scope.html" />
+        <option value="$PROJECT_DIR$/Day 7/js/Day7Scope.js" />
       </list>
     </option>
   </component>
@@ -679,8 +679,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day 7/js/Day7Functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79079497" vertical-offset="168" max-vertical-offset="885">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="885">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 7/Day7Scope.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 7/js/Day7Scope.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="717">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding />
         </state>
       </provider>
