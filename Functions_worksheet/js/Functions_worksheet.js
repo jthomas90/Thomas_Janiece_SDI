@@ -28,7 +28,7 @@ function circleCir(r){
  circleCir(10);
  //Create a variable for the return value
  var results = circleCir(radius);
- 
+
 //Results
  console.log("The circumference of the circle is "+results.toFixed(2)+".");
 

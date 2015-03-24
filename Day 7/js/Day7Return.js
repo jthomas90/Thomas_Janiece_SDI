@@ -15,14 +15,19 @@ Section 00
  function calcArea(w,h){
      //Calculate area
      var area = w*h;
-     console.log("Inside the function the ares is "+area+".");
+     console.log("Inside the function the area is "+area+".");
      //Return the are to the main code
      return area;
  }
 
+ //Prompt the user for width and height
+ var width = prompt("What is the width for your rect?");
+ var height = prompt("What is the height of your rect.?");
+
+
  //call function
  //Create a variable to catch the return value
- var rectArea = calcArea(10,20);
+ var rectArea = calcArea(width,height);
 
  //console.log the area
  console.log(rectArea);
