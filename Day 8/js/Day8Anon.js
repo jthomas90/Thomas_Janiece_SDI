@@ -58,7 +58,7 @@ Day 8 Anon
  var triangleAnon = function(b, h){
      var area = .5*b*h;
      return area;
- }
+ };
 
  // Function call to basic function
  var basicArea = triangleArea(5,6);

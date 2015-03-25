@@ -9,33 +9,46 @@ Thomas Janiece Functions Assignment
 
 //alert("Just testing!");
 
+
  //Create prompt to find out if they are male or female
  var gender = prompt("This is a calculator to find out what you total body fat is.\nAre you a male of female?");
 
+ console.log(gender);
  //Validate gender value
- while (gender==="" || ! isNaN(gender) || gender!="Female" ||gender!="female" || gender!="Male" ||gender!="male" ) {
-     if (gender === "") {
+ while (gender!="female" && gender!="male" ){
+
+     if(gender===""){
          //re prompt user
          gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
-     } else if (!isNaN(gender)) {
+
+     } else if (!isNaN(gender)){
          //re prompt user
          gender = prompt("Please do not enter any numbers.\nAre you male or female?");
-     } else if (gender != "Female" || gender != "female" || gender != "Male" || gender != "male") {
-         //re prompt user
-         gender = prompt("Please enter male or female?")
+
      } else
      //re prompt user
-         gender = prompt("Please enter male or female?");
+         gender = prompt("Please enter male or female?")
+
  }
 
- var totalWeightF =prompt("Hello Ma'am what is you total body weihgt?");
+
+
+
+ //Create a prompt to fin out female body weight
+ var totalWeightFem = prompt("Hello ma'am, What is you total body weight?");
  //Validation
- var wristM
- var waistM
- var hipM
- var armM
- var totalWeightM
- var waitstMM
+ while(totalWeightFem==="" || isNaN(totalWeightFem)){
+     if (totalWeightFem === ""){
+         //re prompt user
+         totalWeightFem = prompt("Please do not leave blank and enter your total body weight.\nNumbers only");
+     }else if (isNaN(totalWeightFem)){
+         //re prompt user
+         totalWeightFem = prompt("Please enter your total body weight.\n Use numbers only")
+     }
+ }
+
+
+
 
 
  //Create the basic function for female
@@ -63,13 +76,13 @@ function femaleBF(tbw,wristM,waistM,hipM,armM){
     var bodyFatWeight = tbw - leanBodyMass;
 
     //Body Fat Percentage = (Body Fat Weight x 100) / total body weight
-    var bodyFatPer = (bodyFatWeight * 100)/tbw;
+    var bodyFatPerFem = (bodyFatWeight * 100)/tbw;
     //Return the body weight percentage of female
-    return bodyFatPer;
+    return bodyFatPerFem;
 }
 
  //Create Anon function for Male
- var maleFunct = function(tbw, waistM){
+ var maleFunc = function(tbw, waistM){
      //Factor 1
      var factor1 = (tbw  * 1.082) + 94.42;
 
@@ -83,35 +96,63 @@ function femaleBF(tbw,wristM,waistM,hipM,armM){
      var bodyFatWeight = tbw - leanBodyMass;
 
      //Body Fat Percentage
-     var bodyFatPer = (bodyFatWeight * 100) / tbw;
+     var bodyFatPerMale = (bodyFatWeight * 100) / tbw;
      //Return the body weight percentage of Male
-     return bodyFatPer;
+     return bodyFatPerMale;
 
  };
 
+ //Create function for validation
+  function validate(){
+      //re prompt user
+      gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
+      if (gender === "female"){
+          var wristFem = prompt("What is the measurement around your wrist at fullest point?");
+          //Validation
+          if(wristFem===""){
+              //re prompt user
+              wristFem = prompt("Please do not leave blank and only use numbers.\nWhat is the measurement around your wrist at fullest point?");
 
-//Create prompt to find out if they are male or female
- var gender = prompt("This is a calculator to find out what you total body fat is.\nAre you a male of female?");
+          } else if (!isNaN(wristFem)){
+              //re prompt user
+              wristFem = prompt("Please do not enter any numbers.\nWhat is the measurement around your wrist at fullest point?");
+          } else
+          //re prompt user
+              gender = prompt("Please enter male or female?");
 
- //Validate gender value
- while (gender==="" || ! isNaN(gender) || gender!="Female" ||gender!="female" || gender!="Male" ||gender!="male" ){
-     if(gender===""){
-     //re prompt user
-         gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
-     } else if (!isNaN(gender)){
-         //re prompt user
-         gender = prompt("Please do not enter any numbers.\nAre you male or female?");
-     } else if (gender!="Female" ||gender!="female" || gender!="Male" ||gender!="male"){
-         //re prompt user
-         gender = prompt("Please enter male or female?")
-     } else
-     //re prompt user
-         gender = prompt("Please enter male or female?")
 
- }
+          var waistFem = prompt("What is your waist measurement at your navel?");
+          //Validation
 
- if (gender === "Female" || "female"){
-    var girl = femaleBF()
- }
+
+          var hipFem= prompt("What is your hip measurement at it fullest point?");
+          //Validation
+
+
+          var armFem = prompt("What is your forearm measurement at its fullest point?");
+          //Validation
+
+
+          //call function
+          var girlWeight = femaleBF(totalWeightFem,wristFem,waistFem,hipFem,armFem);
+          console.log("Your body fat percentage is "+girlWeight);
+
+
+      }else if (gender === "male"){
+
+          var totalWeightMale= prompt("Hello sir, What is you total body weight?");
+          //Validation
+
+
+          var waistMale = prompt("What is your waist measurement");
+          //Validation
+
+
+
+          //call function
+          var boyWeight = maleFunc(totalWeightMale,waistMale);
+          console.log("Your body fat percentage is "+boyWeight);
+      }
+  }
 
 
