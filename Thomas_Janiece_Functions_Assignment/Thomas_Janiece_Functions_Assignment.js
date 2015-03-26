@@ -31,29 +31,29 @@ Thomas Janiece Functions Assignment
 
  }if (gender === "female"){
   //START HERE!!!!! ASK TOTAL WEIGHT
-     //Validation
+     //Validation with prompts
      do {
          var totalWeightFem = prompt("Hello ma'am, What is you total body weight?\nPlease don't leave blank and enter numbers only.");
 
      } while(totalWeightFem === "" || isNaN(totalWeightFem));
 
-do{
-    var wristFem = prompt("What is the measurement around your wrist at fullest point?\nPlease don't leave blank and enter numbers only.");
+    do{
+        var wristFem = prompt("What is the measurement around your wrist?\nPlease don't leave blank and enter numbers only.");
 
-}while (wristFem === "" || isNaN(wristFem));
+    }while (wristFem === "" || isNaN(wristFem));
 
      do{
-         var waistFem = prompt("What is your waist measurement at your navel?\nPlease don't leave blank and enter numbers only.");
+         var waistFem = prompt("What is your waist measurement?\nPlease don't leave blank and enter numbers only.");
 
      }while(waistFem ==="" || isNaN(waistFem));
 
      do{
-         var hipFem= prompt("What is your hip measurement at it fullest point?\nPlease don't leave blank and enter numbers only.");
+         var hipFem= prompt("What is your hip measurement?\nPlease don't leave blank and enter numbers only.");
 
      }while( hipFem ==="" || isNaN(hipFem) );
 
      do{
-         var armFem = prompt("What is your forearm measurement at its fullest point?\nPlease don't leave blank and enter numbers only.");
+         var armFem = prompt("What is your forearm measurement?\nPlease don't leave blank and enter numbers only.");
 
      }while(armFem==="" || isNaN(armFem));
 
@@ -135,7 +135,24 @@ function femaleBF(tbw,wristM,waistM,hipM,armM){
 }
 
 
- //Test
+ /*
+  //Test #1
+  prompt 1: Male
+  prompt 2: 165
+  prompt 3: 32
+  console log: Your body fat percentage is 15.06%.
 
- 
+  //Test #2
+  prompt 1: Female
+  prompt 2: 132
+  prompt 3: 3
+  prompt 4: 32
+  prompt 5: 36
+  prompt 6: 3.5
+  console log: Your body fat percentage is 28.71%.
+
+  */
+
+
+
 
