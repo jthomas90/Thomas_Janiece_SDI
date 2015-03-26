@@ -17,41 +17,89 @@ Thomas Janiece Functions Assignment
  //Validate gender value
  while (gender!="female" && gender!="male" ){
 
-
      if(gender===""){
          //re prompt user
          gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
-
 
      } else if (!isNaN(gender)){
          //re prompt user
          gender = prompt("Please do not enter any numbers.\nAre you male or female?");
 
-
      } else
      //re prompt user
          gender = prompt("Please enter male or female?");
+
+ }if (gender === "female"){
+  //START HERE!!!!! ASK TOTAL WEIGHT
+     //Validation
+     do {
+         var totalWeightFem = prompt("Hello ma'am, What is you total body weight?\nPlease don't leave blank and enter numbers only.");
+
+     } while(totalWeightFem === "" || isNaN(totalWeightFem));
+
+do{
+    var wristFem = prompt("What is the measurement around your wrist at fullest point?\nPlease don't leave blank and enter numbers only.");
+
+}while (wristFem === "" || isNaN(wristFem));
+
+     do{
+         var waistFem = prompt("What is your waist measurement at your navel?\nPlease don't leave blank and enter numbers only.");
+
+     }while(waistFem ==="" || isNaN(waistFem));
+
+     do{
+         var hipFem= prompt("What is your hip measurement at it fullest point?\nPlease don't leave blank and enter numbers only.");
+
+     }while( hipFem ==="" || isNaN(hipFem) );
+
+     do{
+         var armFem = prompt("What is your forearm measurement at its fullest point?\nPlease don't leave blank and enter numbers only.");
+
+     }while(armFem==="" || isNaN(armFem));
+
+
+     //call function
+     var girlWeight = femaleBF(totalWeightFem,wristFem,waistFem,hipFem,armFem);
+     console.log("Your body fat percentage is "+girlWeight.toFixed(2)+"%.");
+
+
+ }else if (gender === "male") {
+     do {
+         var totalWeightMale = prompt("Hello sir, What is you total body weight?\nPlease don't leave blank and enter numbers only.");
+
+     } while (totalWeightMale === "" || isNaN(totalWeightMale));
+
+     do {
+         var waistMale = prompt("What is your waist measurement.\nPlease don't leave blank and enter numbers only.");
+
+ }while (waistMale==="" || isNaN(waistMale));
+
+     var maleFunc = function(tbw, waistM){
+         //Factor 1
+         var factor1 = (tbw  * 1.082) + 94.42;
+
+         //Factor 2
+         var factor2 = waistM * 4.15;
+
+         //Lean Body Mass
+         var leanBodyMass = factor1-factor2;
+
+         //Body Fat Weight
+         var bodyFatWeight = tbw - leanBodyMass;
+
+         //Body Fat Percentage
+         var bodyFatPerMale = (bodyFatWeight * 100) / tbw;
+         //Return the body weight percentage of Male
+         return bodyFatPerMale;
+
+     };
+
+     //call function
+     var boyWeight = maleFunc(totalWeightMale,waistMale);
+     console.log("Your body fat percentage is "+boyWeight.toFixed(2)+"%.");
+     //Create Anon function for Male
+
  }
-
-
-
-
- //Create a prompt to find out female body weight
- var totalWeightFem = prompt("Hello ma'am, What is you total body weight?");
- //Validation
- while(totalWeightFem==="" || isNaN(totalWeightFem)){
-     if (totalWeightFem === ""){
-         validate();
-         //re prompt user
-         totalWeightFem = prompt("Please do not leave blank and enter your total body weight.\nNumbers only");
-     }else if (isNaN(totalWeightFem)){
-         //re prompt user
-         totalWeightFem = prompt("Please enter your total body weight.\n Use numbers only");
-         validate();
-     } else
-     validate();
- }
-
 
 
 
@@ -86,78 +134,8 @@ function femaleBF(tbw,wristM,waistM,hipM,armM){
     return bodyFatPerFem;
 }
 
- //Create Anon function for Male
- var maleFunc = function(tbw, waistM){
-     //Factor 1
-     var factor1 = (tbw  * 1.082) + 94.42;
 
-     //Factor 2
-     var factor2 = waistM * 4.15;
+ //Test
 
-     //Lean Body Mass
-     var leanBodyMass = factor1-factor2;
-
-     //Body Fat Weight
-     var bodyFatWeight = tbw - leanBodyMass;
-
-     //Body Fat Percentage
-     var bodyFatPerMale = (bodyFatWeight * 100) / tbw;
-     //Return the body weight percentage of Male
-     return bodyFatPerMale;
-
- };
-
- //Create function for validation
-  function validate(){
-      //re prompt user
-      gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
-      if (gender === "female"){
-          var wristFem = prompt("What is the measurement around your wrist at fullest point?");
-          //Validation
-          if(wristFem===""){
-              //re prompt user
-              wristFem = prompt("Please do not leave blank and only use numbers.\nWhat is the measurement around your wrist at fullest point?");
-
-          } else if (!isNaN(wristFem)){
-              //re prompt user
-              wristFem = prompt("Please do not enter any numbers.\nWhat is the measurement around your wrist at fullest point?");
-          } else
-          //re prompt user
-              gender = prompt("Please enter male or female?");
-
-
-          var waistFem = prompt("What is your waist measurement at your navel?");
-          //Validation
-
-
-          var hipFem= prompt("What is your hip measurement at it fullest point?");
-          //Validation
-
-
-          var armFem = prompt("What is your forearm measurement at its fullest point?");
-          //Validation
-
-
-          //call function
-          var girlWeight = femaleBF(totalWeightFem,wristFem,waistFem,hipFem,armFem);
-          console.log("Your body fat percentage is "+girlWeight);
-
-
-      }else if (gender === "male"){
-
-          var totalWeightMale= prompt("Hello sir, What is you total body weight?");
-          //Validation
-
-
-          var waistMale = prompt("What is your waist measurement");
-          //Validation
-
-
-
-          //call function
-          var boyWeight = maleFunc(totalWeightMale,waistMale);
-          console.log("Your body fat percentage is "+boyWeight);
-      }
-  }
-
+ 
 

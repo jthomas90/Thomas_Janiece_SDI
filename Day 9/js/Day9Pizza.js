@@ -11,7 +11,7 @@ Section 00
 
  //How much pizza cost per slice and per square inch of pizza
 
- //Promt the user for the radius of pizza
+ //Prompt the user for the radius of pizza
 
  var pizzaRadius = ("Welcome, Lets calculate the cost of your pizza.\nWhat is the radius of your pizza?");
 
@@ -22,7 +22,7 @@ Section 00
      pizzaRadius = prompt("Please do not leave blank and only use numbers.\nWhat is the radius of your pizza.");
  }
 
- //prompt the user for cost of whole pizza
+ //prompt the user for cost of whole pizza -DO VALIDATION
  do {
      var pizzaCost = prompt("How much does your pizza cost in total.\nReminder please do not leave blank and only use numbers.");
 
