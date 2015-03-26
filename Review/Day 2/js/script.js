@@ -15,12 +15,12 @@ Anything inside of here will not be seen by the computer.
 //Single lined comment. ONLY this line will be ignored.
 
 //alert boxes- pop up box that will alert the user with information.
-alert("Text that the user will see.");
+alert("This are annoying!");
 
 //console.log - shows information to the programmer
 // This is great for checking values and debugging
 //Also shows all errors
-console.log("This is the console");
+console.log("This is the console.");
 
 //Declare a variable
 //Use the keyword of var
@@ -55,23 +55,46 @@ console.log(b);
 //Find our ages
 
 //Declare and define the year you were born
-var yearBorn = 1990;
+do {
+    var yearBorn = prompt("What year where you born in.\nPlease do not leave blank and only enter numbers");
+
+}while (yearBorn==="" || isNaN(yearBorn));
+
 
 //2015 - year born
 var ourAge = 2015 - yearBorn;
-console.log(ourAge);
+
+console.log("You are "+ourAge+" years old. Unless your bithday has not come up yet.\nThen you are "+(ourAge-1)+ " years old.");
+
 
 //Talk about Math
 // +, -, *, /
 
 //Find the area of triangle
 //base* height/2
+alert("This is a calculator to discover the are of a triangle.");
 
-var base = 8;
-var height = 5;
+do {
+    var base = prompt("What is the base of your triangle?\nPlease do not leave blank and enter numbers only.");
+} while (base==="" || isNaN(base));
 
-var areaTriangle = base*height/2;
-console.log(areaTriangle);
+do {
+    var height = prompt("What is the height of your triangle?\nPlease do not leave blank and enter numbers only.");
+}while (height==="" || isNaN(height) );
+
+
+
+
+function areaTriangle (b,h){
+   var triArea = b*h/2;
+    return triArea;
+}
+var triangleArea = areaTriangle(base,height);
+
+console.log("The area of the triangle is "+triangleArea+".");
+
+
+
 
 // Modulo - %
 // Gives the remainder
@@ -151,13 +174,26 @@ var nope = false;
 
 // Find the Average quiz grades
 
-var quiz1 = 87;
-var quiz2 = 100;
-var quiz3 = 90;
+do {
+    var quiz1 = prompt("We are going to find the average between 3 test score.\nWhat is you grade for quiz #1.\nDo not leave blanks and only use numbers.");
+} while (quiz1==="" || isNaN(quiz1) );
+do {
+    var quiz2 = prompt("What is you grade for quiz #2.\nDo not leave blanks and only use numbers.");
+} while (quiz2==="" || isNaN(quiz2));
+do {
+    var quiz3 = prompt("What is you grade for quiz #3.\nDo not leave blanks and only use numbers.");
+}while (quiz3==="" || isNaN(quiz3));
+
 
 // Average - Add them up and divide by the numbers of quizes
-var average = (quiz1 + quiz2 + quiz3)/3;
-console.log(average);
+function average(q1,q2,q3){
+    var results = (q1+q2+q3)/3;
+    return results;
+}
+
+var averageGrade = average(parseFloat(quiz1),parseFloat(quiz2),parseFloat(quiz3));
+
+console.log("Your grade average is "+averageGrade.toFixed(2));
 
 //Concatenation - Combining text stings
 // Use the + sign - add and concatenating
@@ -183,7 +219,7 @@ var num = 5.5678912345;
 //Round to 2 decimal places
 var n = num.toFixed(2);
 
-console.log("The rounded number to 2 decimal places is "+n);
+console.log("The rounded number to 2 decimal places is "+n+".");
 
 
 
