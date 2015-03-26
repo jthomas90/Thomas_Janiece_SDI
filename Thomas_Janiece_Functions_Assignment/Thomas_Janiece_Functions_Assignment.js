@@ -11,40 +11,45 @@ Thomas Janiece Functions Assignment
 
 
  //Create prompt to find out if they are male or female
- var gender = prompt("This is a calculator to find out what you total body fat is.\nAre you a male of female?");
+ var gender = prompt("This is a calculator to find out what you total body fat is.\nAre you a male of female?").toLocaleLowerCase();
 
- console.log(gender);
+
  //Validate gender value
  while (gender!="female" && gender!="male" ){
+
 
      if(gender===""){
          //re prompt user
          gender = prompt("Please do not leave blank and only use letters.\nAre you male or female?");
 
+
      } else if (!isNaN(gender)){
          //re prompt user
          gender = prompt("Please do not enter any numbers.\nAre you male or female?");
 
+
      } else
      //re prompt user
-         gender = prompt("Please enter male or female?")
-
+         gender = prompt("Please enter male or female?");
  }
 
 
 
 
- //Create a prompt to fin out female body weight
+ //Create a prompt to find out female body weight
  var totalWeightFem = prompt("Hello ma'am, What is you total body weight?");
  //Validation
  while(totalWeightFem==="" || isNaN(totalWeightFem)){
      if (totalWeightFem === ""){
+         validate();
          //re prompt user
          totalWeightFem = prompt("Please do not leave blank and enter your total body weight.\nNumbers only");
      }else if (isNaN(totalWeightFem)){
          //re prompt user
-         totalWeightFem = prompt("Please enter your total body weight.\n Use numbers only")
-     }
+         totalWeightFem = prompt("Please enter your total body weight.\n Use numbers only");
+         validate();
+     } else
+     validate();
  }
 
 

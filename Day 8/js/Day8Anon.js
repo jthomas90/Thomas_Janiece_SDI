@@ -66,4 +66,4 @@ Day 8 Anon
 
  //Function call to the Anon function
  var anonArea = triangleAnon(4,5);
- console.log("The area from the anon fuction is "+anonArea+".");
+ console.log("The area from the anon function is "+anonArea+".");
