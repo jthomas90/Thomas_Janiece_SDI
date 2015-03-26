@@ -10,10 +10,14 @@
 
 // Slice of Pie Part 1
 //Variables
+do {
+    var slices = prompt("How many slices of pie");
+}while(slices==="" || isNaN(slices));
 
-var slices = 12;
 var people = 25;
+
 var pizza  = 7;
+
 
 //Multiply pizza by slices then divide by people
 

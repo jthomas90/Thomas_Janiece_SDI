@@ -22,12 +22,17 @@ var height = prompt("Let's calculate the area of the rectangle!\nPlease enter th
 
 var width = prompt("Please enter the width of the rectangle:");
 
+
 //Calculate the area of the rectangle
-var area = width*height;
+function rectArea(w,h){
+    var area = w*h;
+    return area;
+}
+var areaRect = rectArea(width,height);
 
 //Tell te user the answer
-console.log("The area of the rectangle with a height of "+height+ " and a width of "+ width+ " is " +area + ".");
+console.log("The area of the rectangle with a height of "+height+ " and a width of "+ width+ " is " +areaRect + ".");
 
-var results = "The results of the area is "+ area+ ".";
+var results = "The results of the area is "+ areaRect+ ".";
 
 console.log(results);
