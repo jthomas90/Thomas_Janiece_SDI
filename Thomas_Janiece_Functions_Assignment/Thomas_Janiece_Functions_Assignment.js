@@ -103,7 +103,6 @@ Thomas Janiece Functions Assignment
 
 
 
-
  //Create the basic function for female
 function femaleBF(tbw,wristM,waistM,hipM,armM){
 

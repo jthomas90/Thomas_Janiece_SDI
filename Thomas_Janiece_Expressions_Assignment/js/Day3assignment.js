@@ -12,11 +12,12 @@ alert("This is program is to help you find out how much you get paid before taxe
 
 
 //Create Variables
- var    myArray = [];
- myArray[0] = prompt("How many hours a day do you work a day?\ni.e. Numbers Only.");
- myArray[1] = prompt("How much do you get paid hourly?\ni.e. Numbers Only.");
- myArray[2] = prompt("How many days a week do you work?\ni.e. Numbers Only.");
- myArray[3] = prompt("Approximately how much tax is taken out per week?\ni.e. Numbers Only.");
+
+     var myArray = [];
+     myArray[0] = prompt("How many hours a day do you work a day?\ni.e. Numbers Only.");
+     myArray[1] = prompt("How much do you get paid hourly?\ni.e. Numbers Only.");
+     myArray[2] = prompt("How many days a week do you work?\ni.e. Numbers Only.");
+     myArray[3] = prompt("Approximately how much tax is taken out per week?\ni.e. Numbers Only.");
 
  //Display user inputs
 console.log(myArray);
